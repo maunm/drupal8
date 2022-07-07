@@ -5,8 +5,9 @@ RUN apt-get update && apt-get install -y \
 		git \
 		mysql-client \
 		vim \
-		wget \
-	  bcmath
+		wget 
+
+RUN docker-php-ext-install bcmath
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
 	php composer-setup.php && \
