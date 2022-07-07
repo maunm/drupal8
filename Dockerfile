@@ -23,3 +23,4 @@ RUN rm -rf /var/www/html/*
 COPY apache-drupal.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /app
+
